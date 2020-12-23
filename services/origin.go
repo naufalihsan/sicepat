@@ -5,11 +5,6 @@ import (
 	"net/http"
 )
 
-type Commands struct {
-	UserID  string `json:"userid"`
-	Command string `json:"command"`
-}
-
 func GetProvinceList(request *v1.GetProvinceListRequest) (*v1.GetProvinceListResponse, *error) {
 	response := &v1.GetProvinceListResponse{}
 	header := &http.Header{}

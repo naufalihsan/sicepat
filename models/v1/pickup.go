@@ -93,6 +93,6 @@ type PickupResponse struct {
 
 type PickupDetail struct {
 	Awb    string `json:"awb"`
-	Amount string `json:"amount"`
+	Amount int64  `json:"amount"`
 	RefID  string `json:"refid"`
 }

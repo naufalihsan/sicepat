@@ -7,12 +7,16 @@ type GetDestinationListRequest struct {
 }
 
 type GetDestinationListResponse struct {
-	Data    []DestinationList `json:"destination"`
-	Status  string            `json:"status"`
-	Message string            `json:"message"`
+	Data    DestinationList `json:"data"`
+	Status  string          `json:"status"`
+	Message string          `json:"message"`
 }
 
 type DestinationList struct {
+	Destination []DestinationDetail `json:"destination"`
+}
+
+type DestinationDetail struct {
 	Province        string `json:"province"`
 	City            string `json:"city"`
 	District        string `json:"district"`

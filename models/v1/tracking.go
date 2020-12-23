@@ -15,7 +15,7 @@ type TrackingResponse struct {
 type TrackingDetail struct {
 	Awb              string               `json:"awb"`
 	DeliveryType     string               `json:"delivery_type"`
-	Weight           string               `json:"weight"`
+	Weight           float32              `json:"weight"`
 	ShipperName      string               `json:"shipper_name"`
 	ShipperAddress   string               `json:"shipper_address"`
 	RecipientName    string               `json:"recipient_name"`
